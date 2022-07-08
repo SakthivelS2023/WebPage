@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+  background-color: white; 
+    background-image: linear-gradient(rgb(108, 186, 238), rgb(176, 214, 231),rgb(200, 220, 231));    background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: 100%;margin: 0%;
+    padding: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+form {
+border: 5px solid black;
+border-radius: 0px 40px 0px 0px;
+ box-shadow: 20px 30px 20px black;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(19, 17, 17);
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #8dbfe9;
+  color: #181616;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 2px solid black;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+  
+
+}
+#back{
+  background-color: #8dbfe9;
+  color: #181616;
+  padding: 14px 20px;
+  margin: 5px;
+  border: 4px solid black;
+  cursor: pointer;
+  height: 15px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="login form">
+    <meta name="keywords" content="HTML, CSS, JavaScript,login form">
+    <meta name="author" content="Sakthivel"> 
+
+    <link rel="shortcut icon" href="SkWeb/favicon.ico" type="image/x-icon">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="SkWeb/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="SkWeb/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="SkWeb/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="SkWeb/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="SkWeb/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="SkWeb/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="SkWeb/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="SkWeb/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="SkWeb/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="SkWeb/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="SkWeb/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="SkWeb/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="SkWeb/favicon-16x16.png">
+    <link rel="manifest" href="SkWeb/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+<title>WorkerLoginPage</title>
+</head>
+<body>
+
+<h1><u><b>Workers Login Form</b></u></h1>
+
+<form action="/action_page.php" method="post">
+  
+  <div class="container">
+    <label for="uname"><b><u>Username</u></b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="add"><b><u>Address</u></b></label>
+    <input type="text" placeholder="Enter Address" name="add" required>
+        <br>
+    <label for="phone"><b><u>Phone number :</u></b></label>
+    <input type="tel"  name="phone" placeholder="123-45-678-90" pattern="[0-9]{10}" required>
+
+
+  <label for="dob"><b><u>Date Of Birth :</u></b></label>
+  <input type="date" id="dob" name="dob">
+  <br>
+
+    <label for="psw"><b><u>Password</u></b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="cpsw"><b><u>Confirm Password</u></b></label>
+    <input type="password" placeholder="Enter Confirm Password" name="cpsw" required>
+
+   
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+  <button  id="back" onclick="history.back()">Go Back</button>
+</form>
+
+</body>
+</html>
